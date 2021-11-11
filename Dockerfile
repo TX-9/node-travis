@@ -9,7 +9,7 @@ ENV PATH /usr/src/app/node_modules/.bin:%PATH
 
 COPY package*.json /usr/src/app
 
-RUN npm install
+RUN apt-get install npm -y
 
 COPY . /usr/src/app
 
