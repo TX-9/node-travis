@@ -1,4 +1,6 @@
-FROM node
+# syntax=docker/dockerfile:1
+
+FROM node:12.18.1
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
