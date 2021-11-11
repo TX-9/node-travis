@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+script:
+  - docker build -t jlabdocker/node .
+  - docker image jlabdocker/node
+
