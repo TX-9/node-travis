@@ -5,3 +5,11 @@ script:
   - docker build -t jlabdocker/node .
   - docker image jlabdocker/node
 
+before_deploy:
+  - docker login -u jlabdocker -p jlabdocker0)
+
+deploy:
+  provide: script
+  script: docker push jlabdocker/node
+  on:
+    branch: main
